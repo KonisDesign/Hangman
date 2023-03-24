@@ -10,7 +10,126 @@ html, body {
     background-image: url('../public/back.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: bottom right;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    min-height: 80px;
+    min-width: 60px;
+    border-bottom: 5px solid #fff;
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 40px;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+.key-button {
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+
+  &:disabled {
+    background: #2b2b6b;
+  }
+
+  &:active {
+    background: #2b2b6b;
+  }
+}
+
+.red {
+    color: red;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.answer-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.keyboard-container {
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.hangman-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    gap: calc(100% - 400px);
+    transition: gap 1s ease, left 5s ease 1s;
+
+    img {
+        width: auto;
+        max-width: 200px;
+        height: auto;
+        min-height: 200px;
+        object-fit: cover;
+        object-position: bottom;
+    }
+}
+
+.wl-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
