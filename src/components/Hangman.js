@@ -3,7 +3,7 @@ import React from 'react'
 export default function Hangman(props) {
 
   const anim = {
-    gap: 'calc(' + (100 - (props.level * 10)) + '% - 400px)'
+    gap: 'calc(' + (100 - (props.level * 10)) + '% - 30%)',
   }
 
   const win = {
