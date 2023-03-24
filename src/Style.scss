@@ -134,6 +134,7 @@ header {
     justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
+    z-index: 999;
 
     @media all and (max-width: 834px) {
         width: 90%;
